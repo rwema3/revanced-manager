@@ -65,6 +65,16 @@ class MyApp extends StatelessWidget {
     List<String> localeList = replaceLocale.split('-');
     Locale locale = Locale(localeList[0], localeList[1]);
 
+    return DynamicThemeBuilder(
+      title: 'ReVanced Manager',
+      home: const NavigationView(),
+      localizationsDelegates: [
+        FlutterI18nDelegate(
+          translationLoader: FileTranslationLoader(
+            forcedLocale: locale,
+            basePath: 'assets/i18n',
+            useCountryCode: true,
+          ),
     
   }
 }
