@@ -75,6 +75,11 @@ class MyApp extends StatelessWidget {
             basePath: 'assets/i18n',
             useCountryCode: true,
           ),
+          missingTranslationHandler: (key, locale) {
+            print(
+                '--> Missing translation: key: $key, languageCode: ${locale?.languageCode}');
+          },
+        ),
     
   }
 }
