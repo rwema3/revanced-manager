@@ -58,6 +58,13 @@ Future main() async {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  
+  @override
+  Widget build(BuildContext context) {
+    String rawLocale = prefs.getString('language') ?? 'en_US';
+    String replaceLocale = rawLocale.replaceAll('_', '-');
+    List<String> localeList = replaceLocale.split('-');
+    Locale locale = Locale(localeList[0], localeList[1]);
+
+    
   }
 }
