@@ -80,6 +80,9 @@ class MyApp extends StatelessWidget {
                 '--> Missing translation: key: $key, languageCode: ${locale?.languageCode}');
           },
         ),
-    
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+    );
   }
 }
