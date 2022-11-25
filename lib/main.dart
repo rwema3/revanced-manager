@@ -30,5 +30,12 @@ Future main() async {
   tz.initializeTimeZones();
   prefs = await SharedPreferences.getInstance();
 
+  await SentryFlutter.init(
+    (options) {
+      options
+        ..dsn = isSentryEnabled ? Environment.sentryDSN : ''
+        ..environment = 'alpha'
+        ..release = '0.1'
+  
   }
 }
