@@ -1,6 +1,6 @@
 # 💊 ReVanced Manager
 
-The official ReVanced Manager based on Flutter.
+ReVanced Manager based on Flutter.
 
 ## 🔽 Download
 To download the Alpha version of Manager, go [here](https://github.com/revanced/revanced-manager/releases/latest) and install the provided APK file.
