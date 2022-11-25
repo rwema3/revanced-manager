@@ -36,6 +36,18 @@ Future main() async {
         ..dsn = isSentryEnabled ? Environment.sentryDSN : ''
         ..environment = 'alpha'
         ..release = '0.1'
+        ..tracesSampleRate = 1.0
+        ..anrEnabled = true
+        ..enableOutOfMemoryTracking = true
+        ..sampleRate = isSentryEnabled ? 1.0 : 0.0
+        ..beforeSend = (event, hint) {
+          if (isSentryEnabled) {
+            return event;
+          } else {
+            return null;
+          }
+        } as BeforeSendCallback?;
+    },
   
   }
 }
