@@ -30,6 +30,8 @@ Future main() async {
   tz.initializeTimeZones();
   prefs = await SharedPreferences.getInstance();
 
+        ..sampleRate = isSentryEnabled ? 1.0 : 0.0
+        ..beforeSend = (event, hint) {
           if (isSentryEnabled) {
             return event;
           } else {
