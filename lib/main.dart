@@ -30,10 +30,6 @@ Future main() async {
   tz.initializeTimeZones();
   prefs = await SharedPreferences.getInstance();
 
-    },
-    appRunner: () {
-      runApp(const MyApp());
-    },
   );
   runApp(const MyApp());
 }
