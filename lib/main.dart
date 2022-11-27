@@ -26,10 +26,6 @@ Future main() async {
   await locator<CrowdinAPI>().initialize();
   bool isSentryEnabled = locator<ManagerAPI>().isSentryEnabled();
   locator<GithubAPI>().initialize();
-  await locator<PatcherAPI>().initialize();
-  tz.initializeTimeZones();
-  prefs = await SharedPreferences.getInstance();
-
  
         ..dsn = isSentryEnabled ? Environment.sentryDSN : ''
         ..environment = 'alpha'
