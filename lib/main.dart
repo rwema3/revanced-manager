@@ -30,10 +30,6 @@ Future main() async {
   tz.initializeTimeZones();
   prefs = await SharedPreferences.getInstance();
 
- 
-        ..dsn = isSentryEnabled ? Environment.sentryDSN : ''
-        ..environment = 'alpha'
-        ..release = '0.1'
         ..tracesSampleRate = 1.0
         ..anrEnabled = true
         ..enableOutOfMemoryTracking = true
