@@ -25,6 +25,11 @@ Future main() async {
   await locator<RevancedAPI>().initialize(apiUrl);
   await locator<CrowdinAPI>().initialize();
   bool isSentryEnabled = locator<ManagerAPI>().isSentryEnabled();
+  locator<GithubAPI>().initialize();
+  await locator<PatcherAPI>().initialize();
+  tz.initializeTimeZones();
+  prefs = await SharedPreferences.getInstance();
+
   @override
   Widget build(BuildContext context) {
     String rawLocale = prefs.getString('language') ?? 'en_US';
