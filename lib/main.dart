@@ -30,7 +30,14 @@ Future main() async {
   tz.initializeTimeZones();
   prefs = await SharedPreferences.getInstance();
 
-  
+  await SentryFlutter.init(
+    (options) {
+      options
+        ..dsn = isSentryEnabled ? Environment.sentryDSN : ''
+        ..environment = 'alpha'
+        ..release = '0.1'
+        ..tracesSampleRate = 1.0
+        ..anrEnabled = true
         ..enableOutOfMemoryTracking = true
         ..sampleRate = isSentryEnabled ? 1.0 : 0.0
         ..beforeSend = (event, hint) {
