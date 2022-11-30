@@ -30,4 +30,14 @@ Future main() async {
   tz.initializeTimeZones();
   prefs = await SharedPreferences.getInstance();
 
-  
+          missingTranslationHandler: (key, locale) {
+            print(
+                '--> Missing translation: key: $key, languageCode: ${locale?.languageCode}');
+          },
+        ),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+    );
+  }
+}
