@@ -31,9 +31,6 @@ Future main() async {
   prefs = await SharedPreferences.getInstance();
 
   
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     String rawLocale = prefs.getString('language') ?? 'en_US';
