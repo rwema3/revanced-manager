@@ -30,17 +30,6 @@ Future main() async {
   tz.initializeTimeZones();
   prefs = await SharedPreferences.getInstance();
 
-  
-        ..enableOutOfMemoryTracking = true
-        ..sampleRate = isSentryEnabled ? 1.0 : 0.0
-        ..beforeSend = (event, hint) {
-          if (isSentryEnabled) {
-            return event;
-          } else {
-            return null;
-          }
-        } as BeforeSendCallback?;
-    },
     appRunner: () {
       runApp(const MyApp());
     },
