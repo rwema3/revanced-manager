@@ -30,17 +30,6 @@ Future main() async {
   tz.initializeTimeZones();
   prefs = await SharedPreferences.getInstance();
 
-  
-    return DynamicThemeBuilder(
-      title: 'ReVanced Manager',
-      home: const NavigationView(),
-      localizationsDelegates: [
-        FlutterI18nDelegate(
-          translationLoader: FileTranslationLoader(
-            forcedLocale: locale,
-            basePath: 'assets/i18n',
-            useCountryCode: true,
-          ),
           missingTranslationHandler: (key, locale) {
             print(
                 '--> Missing translation: key: $key, languageCode: ${locale?.languageCode}');
