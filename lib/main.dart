@@ -59,8 +59,6 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-        FlutterI18nDelegate(
-          translationLoader: FileTranslationLoader(
             forcedLocale: locale,
             basePath: 'assets/i18n',
             useCountryCode: true,
