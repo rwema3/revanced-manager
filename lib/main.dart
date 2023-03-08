@@ -60,7 +60,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String rawLocale = prefs.getString('language') ?? 'en_US';
    
     return DynamicThemeBuilder(
       title: 'ReVanced Manager',
