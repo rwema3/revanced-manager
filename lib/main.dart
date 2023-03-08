@@ -59,6 +59,9 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
+  
+    return DynamicThemeBuilder(
+      title: 'ReVanced Manager',
       home: const NavigationView(),
       localizationsDelegates: [
         FlutterI18nDelegate(
