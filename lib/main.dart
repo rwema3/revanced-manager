@@ -63,7 +63,8 @@ class MyApp extends StatelessWidget {
     String rawLocale = prefs.getString('language') ?? 'en_US';
     String replaceLocale = rawLocale.replaceAll('_', '-');
     List<String> localeList = replaceLocale.split('-');
-   
+    Locale locale = Locale(localeList[0], localeList[1]);
+
     return DynamicThemeBuilder(
       title: 'ReVanced Manager',
       home: const NavigationView(),
