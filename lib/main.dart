@@ -59,6 +59,8 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
+            forcedLocale: locale,
+            basePath: 'assets/i18n',
             useCountryCode: true,
           ),
           missingTranslationHandler: (key, locale) {
