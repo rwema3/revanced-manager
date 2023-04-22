@@ -11,3 +11,16 @@ class Patch {
   final bool excluded;
   final List<String> dependencies;
   final List<Package> compatiblePackages;
+
+  Patch({
+    required this.name,
+    required this.description,
+    required this.version,
+    required this.excluded,
+    required this.dependencies,
+    required this.compatiblePackages,
+  });
+
+  factory Patch.fromJson(Map<String, dynamic> json) => _$PatchFromJson(json);
+
+  Map<String, dynamic> toJson() => _$PatchToJson(this);
