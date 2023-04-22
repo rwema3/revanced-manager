@@ -40,3 +40,13 @@ class Package {
   final String name;
   final List<String> versions;
 
+  Package({
+    required this.name,
+    required this.versions,
+  });
+
+  factory Package.fromJson(Map<String, dynamic> json) =>
+      _$PackageFromJson(json);
+
+  Map toJson() => _$PackageToJson(this);
+}
