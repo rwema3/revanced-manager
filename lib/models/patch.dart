@@ -24,3 +24,13 @@ class Patch {
   factory Patch.fromJson(Map<String, dynamic> json) => _$PatchFromJson(json);
 
   Map<String, dynamic> toJson() => _$PatchToJson(this);
+
+  String getSimpleName() {
+    return name
+        .replaceAll('-', ' ')
+        .split('-')
+        .join(' ')
+        .toTitleCase()
+        .replaceFirst('Microg', 'MicroG');
+  }
+}
