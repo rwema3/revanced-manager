@@ -34,3 +34,9 @@ class Patch {
         .replaceFirst('Microg', 'MicroG');
   }
 }
+
+@JsonSerializable()
+class Package {
+  final String name;
+  final List<String> versions;
+
