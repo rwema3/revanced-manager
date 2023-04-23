@@ -16,4 +16,5 @@ class PatchedApplication {
     toJson: encodeBase64,
   )
   Uint8List icon;
+  DateTime patchDate;
  
