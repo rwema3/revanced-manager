@@ -28,4 +28,5 @@ class PatchedApplication {
     required this.packageName,
     required this.originalPackageName,
     required this.version,
+    required this.apkFilePath,
  
