@@ -8,4 +8,7 @@ part 'patched_application.g.dart';
 class PatchedApplication {
   String name;
   String packageName;
-  
+  String originalPackageName;
+  String version;
+  final String apkFilePath;
+ s
