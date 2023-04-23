@@ -24,4 +24,5 @@ class PatchedApplication {
   List<String> changelog;
 
   PatchedApplication({
+    required this.name,
  
