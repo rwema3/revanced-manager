@@ -43,4 +43,7 @@ class PatchedApplication {
 
   Map<String, dynamic> toJson() => _$PatchedApplicationToJson(this);
 
- 
+  static Uint8List decodeBase64(String icon) => base64.decode(icon);
+
+  static String encodeBase64(Uint8List bytes) => base64.encode(bytes);
+}
