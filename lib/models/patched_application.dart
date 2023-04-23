@@ -34,4 +34,5 @@ class PatchedApplication {
     this.isRooted = false,
     this.isFromStorage = false,
     this.hasUpdates = false,
+    this.appliedPatches = const [],
  
