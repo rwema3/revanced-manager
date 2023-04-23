@@ -14,4 +14,6 @@ class PatchedApplication {
   @JsonKey(
     fromJson: decodeBase64,
     toJson: encodeBase64,
+  )
+  Uint8List icon;
  
