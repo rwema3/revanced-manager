@@ -17,4 +17,5 @@ class PatchedApplication {
   )
   Uint8List icon;
   DateTime patchDate;
+  bool isRooted;
  
