@@ -27,4 +27,5 @@ class PatchedApplication {
     required this.name,
     required this.packageName,
     required this.originalPackageName,
+    required this.version,
  
