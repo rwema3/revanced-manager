@@ -32,4 +32,5 @@ class PatchedApplication {
     required this.icon,
     required this.patchDate,
     this.isRooted = false,
+    this.isFromStorage = false,
  
