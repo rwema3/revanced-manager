@@ -19,4 +19,8 @@ class PatchedApplication {
   DateTime patchDate;
   bool isRooted;
   bool isFromStorage;
+  bool hasUpdates;
+  List<String> appliedPatches;
+  List<String> changelog;
+
  
