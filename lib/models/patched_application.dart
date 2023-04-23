@@ -35,4 +35,7 @@ class PatchedApplication {
     this.isFromStorage = false,
     this.hasUpdates = false,
     this.appliedPatches = const [],
+    this.changelog = const [],
+  });
+
  
