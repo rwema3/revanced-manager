@@ -31,4 +31,5 @@ class PatchedApplication {
     required this.apkFilePath,
     required this.icon,
     required this.patchDate,
+    this.isRooted = false,
  
