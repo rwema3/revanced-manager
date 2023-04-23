@@ -6,4 +6,6 @@ part 'patched_application.g.dart';
 
 @JsonSerializable()
 class PatchedApplication {
+  String name;
+  String packageName;
   
