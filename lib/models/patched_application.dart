@@ -38,4 +38,7 @@ class PatchedApplication {
     this.changelog = const [],
   });
 
+  factory PatchedApplication.fromJson(Map<String, dynamic> json) =>
+      _$PatchedApplicationFromJson(json);
+
  
