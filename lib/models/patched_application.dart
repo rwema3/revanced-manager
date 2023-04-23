@@ -4,4 +4,6 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'patched_application.g.dart';
 
-
+@JsonSerializable()
+class PatchedApplication {
+  
