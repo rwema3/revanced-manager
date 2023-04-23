@@ -23,4 +23,5 @@ class PatchedApplication {
   List<String> appliedPatches;
   List<String> changelog;
 
+  PatchedApplication({
  
