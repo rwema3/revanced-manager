@@ -41,4 +41,6 @@ class PatchedApplication {
   factory PatchedApplication.fromJson(Map<String, dynamic> json) =>
       _$PatchedApplicationFromJson(json);
 
+  Map<String, dynamic> toJson() => _$PatchedApplicationToJson(this);
+
  
