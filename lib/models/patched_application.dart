@@ -12,4 +12,5 @@ class PatchedApplication {
   String version;
   final String apkFilePath;
   @JsonKey(
+    fromJson: decodeBase64,
  
