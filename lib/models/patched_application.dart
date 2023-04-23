@@ -30,4 +30,5 @@ class PatchedApplication {
     required this.version,
     required this.apkFilePath,
     required this.icon,
+    required this.patchDate,
  
