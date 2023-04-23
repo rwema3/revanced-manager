@@ -11,4 +11,5 @@ class PatchedApplication {
   String originalPackageName;
   String version;
   final String apkFilePath;
- s
+  @JsonKey(
+ 
