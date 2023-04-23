@@ -33,4 +33,5 @@ class PatchedApplication {
     required this.patchDate,
     this.isRooted = false,
     this.isFromStorage = false,
+    this.hasUpdates = false,
  
